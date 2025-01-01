@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply text-4xl font-bold;
+    }
+
+    h2 {
+        @apply text-2xl font-bold;
+    }
+
+    p {
+        @apply dark:text-zinc-400 text-zinc-600;
+    }
+
+    input {
+        @apply p-1 border outline-none rounded bg-transparent border-zinc-400 dark:border-zinc-500 placeholder:dark:text-zinc-400;
+    }
+
+    body {
+        @apply dark:bg-zinc-900 dark:text-white bg-white text-black transition-colors;
+    }
+}
